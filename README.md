@@ -353,7 +353,7 @@ Senior BI Developer with 5+ years of experience designing enterprise BI and data
 ### Connect with me
 
 - GitHub: [YoniAfengar](https://github.com/YoniAfengar)
-- LinkedIn: [Yonatan Afengar](https://www.linkedin.com/in/yonatan-afengar/)
+- LinkedIn: [Yonatan Afengar](https://https://www.linkedin.com/in/yonatan-afengar-92bb18155?utm_source=share_via&utm_content=profile&utm_medium=member_ios/)
 ---
 
 ⭐ If you found this project interesting or useful, consider giving it a star.
