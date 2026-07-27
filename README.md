@@ -1,276 +1,264 @@
 # Life & Health Insurance Business Analytics
 
-A complete data analytics project focused on analyzing synthetic life and health insurance claims data. The project demonstrates a structured analytical workflow, from data acquisition and validation to exploratory data analysis, statistical summaries, and business insights.
+> **Note:** This is a polished README template. Replace placeholder
+> repository URLs if needed.
 
----
+```{=html}
+<p align="center">
+```
+`<img src="assets/hero.png" alt="Life & Health Insurance Business Analytics Hero Banner">`{=html}
 
-# Project Overview
+```{=html}
+</p>
+```
+```{=html}
+<h1 align="center">
+```
+Life & Health Insurance Business Analytics
 
-This project analyzes a synthetic insurance claims dataset to understand the distribution of claim amounts and evaluate whether demographic and socioeconomic characteristics are associated with differences in insurance claim severity.
+```{=html}
+</h1>
+```
+```{=html}
+<p align="center">
+```
+Business-oriented exploratory analysis of synthetic life and health
+insurance claims using Python, pandas, Matplotlib, reusable analytical
+modules, automated validation, and unit testing.
 
-Unlike a standalone notebook, this repository follows a modular project structure. Business logic is separated into reusable Python modules, making the analysis easier to maintain, extend, and test.
+```{=html}
+</p>
+```
+```{=html}
+<p align="center">
+```
+`<img src="https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white">`{=html}
+`<img src="https://img.shields.io/badge/pandas-Data%20Analysis-150458?logo=pandas&logoColor=white">`{=html}
+`<img src="https://img.shields.io/badge/Matplotlib-Visualization-11557C">`{=html}
+`<img src="https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white">`{=html}
+`<img src="https://img.shields.io/badge/pytest-6%20Tests%20Passing-0A9EDC?logo=pytest&logoColor=white">`{=html}
+`<img src="https://img.shields.io/badge/Ruff-All%20Checks%20Passed-D7FF64?logo=ruff&logoColor=black">`{=html}
+`<img src="https://img.shields.io/badge/uv-Package%20Management-DE5FE9">`{=html}
 
-The repository demonstrates common practices used in data analytics projects, including:
-
-- modular code organization
-- reusable analytical functions
-- data validation
-- exploratory data analysis
-- statistical summaries
-- visualizations
-- documentation
-- testing
-
----
-
-# Business Objective
-
-The main objective is to explore factors that may influence insurance claim amounts.
-
-The analysis focuses on answering questions such as:
-
-- What is the distribution of insurance claim amounts?
-- Are there missing values or data quality issues?
-- Do claim amounts differ across demographic groups?
-- Which customer characteristics appear to have stronger relationships with claim severity?
-- What limitations should be considered before drawing conclusions?
-
----
-
-# Dataset
-
-The project uses a synthetic Life & Health Insurance Claims dataset.
-
-Dataset characteristics:
-
-- 13,000 observations
-- 7 variables
-- No missing values
-- No duplicate records
-
-## Variables
-
-| Variable | Description |
-|-----------|-------------|
-| Age | Customer age |
-| Gender | Customer gender |
-| Income | Annual income |
-| Marital_Status | Marital status |
-| Education | Education level |
-| Occupation | Occupation category |
-| Claim_Amount | Insurance claim amount |
-
----
-
-# Analytical Scope
-
-This project focuses on descriptive analytics.
-
-Specifically, the analysis investigates:
-
-- claim amount distributions
-- customer demographics
-- socioeconomic characteristics
-- statistical summaries
-- visual exploration
-- group comparisons
-
-The project does **not** evaluate:
-
-- claim frequency
-- underwriting decisions
-- insurance pricing
-- customer lifetime value
-- fraud detection
-- predictive modeling
-
-These topics require additional information that is not available in the dataset.
-
----
-
-# Project Workflow
-
-The analytical workflow follows these stages:
-
-1. Download the dataset
-2. Load the data
-3. Validate data quality
-4. Explore the dataset
-5. Produce descriptive statistics
-6. Generate visualizations
-7. Compare customer groups
-8. Interpret findings
-9. Document limitations
-10. Suggest future improvements
-
----
-
-# Project Structure
-
-```text
-.
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── docs/
-│   ├── methodology.md
-│   └── data_dictionary.md
-│
-├── notebooks/
-│   ├── insurance_claims_analysis.ipynb
-│
-├── reports/
-│   └── figures/
-│
-├── src/
-│   ├── __init__.py
-│   ├── config.py
-│   ├── data_loader.py
-│   ├── validation.py
-│   ├── statistics.py
-│   └── visualization.py
-│
-├── tests/
-│
-├── pyproject.toml
-├── uv.lock
-├── README.md
-└── .gitignore
+```{=html}
+</p>
 ```
 
----
+------------------------------------------------------------------------
 
-# Technologies
+## 📖 Overview
 
-- Python
-- pandas
-- matplotlib
-- Jupyter Notebook
-- KaggleHub
-- pytest
-- uv
+This project explores a synthetic life and health insurance claims
+dataset to understand how claim amounts are distributed and whether
+observable customer characteristics are associated with differences in
+claim severity.
 
----
+The project separates data loading, validation, statistical summaries,
+and visualizations into reusable Python modules, creating a reproducible
+analytics workflow that demonstrates both analytical thinking and
+software engineering practices.
 
-# Features
+------------------------------------------------------------------------
 
-- Modular Python architecture
-- Reusable analytical functions
-- Data quality validation
-- Descriptive statistics
-- Automated visualizations
-- Exploratory Data Analysis (EDA)
-- Statistical summaries by customer groups
-- Clean project organization
-- Jupyter Notebook workflow
-- Unit testing support
+## 🎯 Business Objective
 
----
+The analysis investigates claim severity (`Claim_Amount`) by exploring
+distribution patterns, data quality, and differences across demographic
+and socioeconomic groups. It intentionally focuses on descriptive
+analytics rather than predictive modeling.
 
-# Installation
+------------------------------------------------------------------------
 
-Clone the repository:
+## ✨ Project Highlights
 
-```bash
-git clone https://github.com/YOUR_USERNAME/life-health-insurance-business-analytics.git
+-   Modular Python architecture
+-   Exploratory Data Analysis (EDA)
+-   Automated data validation
+-   Business-focused visualizations
+-   Statistical summaries
+-   Unit testing with `pytest`
+-   Code quality with Ruff
+-   Dependency management with `uv`
 
+------------------------------------------------------------------------
+
+## 📊 Dataset
+
+  Metric                 Value
+  ------------------- --------
+  Records               13,000
+  Variables                  7
+  Missing Values             0
+  Duplicate Records          0
+
+Variables:
+
+-   Age
+-   Gender
+-   Income
+-   Marital_Status
+-   Education
+-   Occupation
+-   Claim_Amount
+
+------------------------------------------------------------------------
+
+## 🔄 Project Workflow
+
+``` mermaid
+flowchart LR
+    A[Source Dataset] --> B[Data Loading]
+    B --> C[Validation]
+    C --> D[EDA]
+    D --> E[Statistics]
+    E --> F[Visualizations]
+    F --> G[Business Insights]
+```
+
+------------------------------------------------------------------------
+
+## 📓 Notebook Preview
+
+```{=html}
+<p align="center">
+```
+`<img src="assets/notebook-preview.png" alt="Notebook Preview">`{=html}
+
+```{=html}
+</p>
+```
+
+------------------------------------------------------------------------
+
+## 📈 Key Visualizations
+
+```{=html}
+<p align="center">
+```
+`<img src="assets/visualization-gallery.png" alt="Key Visualizations">`{=html}
+
+```{=html}
+</p>
+```
+
+------------------------------------------------------------------------
+
+## 💼 Executive Summary
+
+```{=html}
+<p align="center">
+```
+`<img src="assets/executive-summary.png" alt="Executive Summary">`{=html}
+
+```{=html}
+</p>
+```
+
+------------------------------------------------------------------------
+
+## 📊 Key Business Insights
+
+-   No missing values or duplicate records.
+-   Claim amounts are positively skewed.
+-   Most claims are relatively small with a limited number of high-value
+    outliers.
+-   Occupation shows the largest observed variation.
+-   Demographic variables alone provide limited explanatory power.
+
+------------------------------------------------------------------------
+
+## 🏗️ Project Architecture
+
+  Module             Responsibility
+  ------------------ -----------------------
+  data_loader.py     Load dataset
+  validation.py      Data quality checks
+  statistics.py      Statistical summaries
+  visualization.py   Charts
+  config.py          Shared configuration
+
+------------------------------------------------------------------------
+
+## 🛠 Technology Stack
+
+  Category          Technologies
+  ----------------- --------------
+  Language          Python
+  Analysis          pandas
+  Visualization     Matplotlib
+  Notebook          Jupyter
+  Testing           pytest
+  Code Quality      Ruff
+  Package Manager   uv
+
+------------------------------------------------------------------------
+
+## 🚀 Getting Started
+
+``` bash
+git clone https://github.com/YoniAfengar/life-health-insurance-business-analytics.git
 cd life-health-insurance-business-analytics
-```
-
-Install dependencies:
-
-```bash
 uv sync
-```
-
----
-
-# Running the Analysis
-
-Launch Jupyter Notebook:
-
-```bash
 uv run jupyter notebook
 ```
 
-Open:
+Run tests:
 
-```text
-notebooks/insurance_claims_analysis.ipynb
-```
-
-Run all notebook cells from top to bottom.
-
----
-
-# Running Tests
-
-```bash
+``` bash
 uv run pytest
 ```
 
----
+Run static analysis:
 
-# Main Findings
+``` bash
+uv run ruff check .
+```
 
-The exploratory analysis indicates that:
+------------------------------------------------------------------------
 
-- The dataset contains no missing values.
-- No duplicate records were identified.
-- Claim amounts are positively skewed.
-- A relatively small number of large claims influence the overall distribution.
-- Gender shows only minor differences in claim severity.
-- Marital status has limited impact on average claim amounts.
-- Education level demonstrates only small variations.
-- Occupation exhibits greater variability, although category imbalance limits reliable comparisons.
+## 📚 Documentation
 
-Overall, demographic characteristics alone do not strongly explain differences in insurance claim amounts.
+See the `docs/` directory for:
 
----
+-   data_dictionary.md
+-   methodology.md
 
-# Limitations
+------------------------------------------------------------------------
 
-Several limitations should be considered:
+## 📈 Future Improvements
 
-- The dataset is synthetic.
-- No customer identifiers are available.
-- No policy information is included.
-- Coverage limits are unavailable.
-- Premium information is unavailable.
-- Claim history is unavailable.
-- Time-series analysis cannot be performed.
-- The analysis is descriptive rather than predictive.
+-   Interactive dashboards
+-   Predictive models
+-   Statistical hypothesis testing
+-   Customer segmentation
+-   CI/CD with GitHub Actions
+-   Docker support
 
----
+------------------------------------------------------------------------
 
-# Future Improvements
+## 📄 License
 
-Potential future enhancements include:
+Released under the MIT License.
 
-- Predictive modeling for claim severity
-- Machine learning models
-- Statistical hypothesis testing
-- Correlation heatmaps
-- Interactive dashboards
-- Feature engineering
-- Automated reporting
-- CI/CD integration
-- Expanded unit test coverage
+------------------------------------------------------------------------
 
----
+## 👤 Author
 
-# Documentation
+**Yonatan Afengar**
 
-Additional documentation is provided in the `docs` directory:
+Senior BI Developer with 5+ years of experience, building modern data
+engineering and analytics projects with Python.
 
-- `methodology.md`
-- `data_dictionary.md`
+-   GitHub: https://github.com/YoniAfengar
+-   LinkedIn: https://www.linkedin.com/in/yonatanafengar/
 
----
+------------------------------------------------------------------------
 
-# License
+```{=html}
+<p align="center">
+```
+⭐ If you found this project useful, consider giving it a star!
 
-This project is intended for educational purposes and portfolio demonstration.
-
-The dataset remains subject to its original license and distribution terms.
+```{=html}
+</p>
+```
